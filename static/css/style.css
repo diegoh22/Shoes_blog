@@ -1,0 +1,301 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+    padding-top: 80px;
+}
+
+/* Logo and Headings */
+
+#logo {
+    color: rgb(214, 170, 255);
+    font-family: "Pacifico", sans-serif;
+    letter-spacing: 2px;
+}
+
+#logo:hover {
+    color: #fff;
+}
+
+h2, h3, h4 {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 308px) {
+    #logo {
+        font-size: 98%;
+    }
+}
+
+/* Navigation */
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(214, 170, 255);
+}
+
+#search-bar > .btn {
+    color: #fff;
+    border-color: rgb(214, 170, 255);
+}
+
+#search-bar > .btn:hover {
+    color: black;
+    background-color: rgb(214, 170, 255);
+}
+
+@media (max-width: 308px) {
+    .navbar-toggler {
+        font-size: 90%;
+    }
+}
+
+/* Parallax Image Section */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Intro Section */
+
+#logo-intro {
+    color: rgb(214, 170, 255);
+    font-family: "Pacifico", sans-serif;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+@media (max-width: 375px) {
+    #logo-intro {
+        display: block;
+    }
+}
+
+/* Blog Posts Section */
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: rgb(214, 170, 255);
+}
+
+.author {
+    color: black;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.post-link {
+    text-decoration: none;
+    color: black;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.page-link {
+    color: #fff;
+    background-color: #212529;
+    border: solid 1px rgb(214, 170, 255);
+}
+
+.page-link:hover {
+    color: rgb(214, 170, 255);
+    background-color: #212529;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+/* Post Detail Section */
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .masthead {
+        height: 400px;
+    }
+}
+
+.masthead-text {
+    background-color: #212529;
+    color: white;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image > img {
+    width: 100%;
+}
+
+.link {
+    color: rgb(214, 170, 255);
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: rgb(214, 170, 255);
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+} 
+
+.btn-comment {
+    margin-top: 5px;
+}
+
+/* Footer Section */
+
+#footer {
+    width:100%;
+    background-color: #212529;
+}
+
+/* Social Media Links */
+
+.social-links > li {
+    display: inline;
+}
+
+.social-links i {
+    color: #fff;
+    font-size: 150%;
+    margin: 0 1%;
+}
+
+.social-links i:hover {
+    color: rgb(214, 170, 255);
+}
+
+/* About Us, Login Page, Register Page, Sign Out Page, Contact Us Page, Add/Edit Post, Error Page */
+
+#about-us, #no-result, #contact-us, #contact-success, #edit-post, #error-page {
+    margin: 0 auto;
+}
+
+#about-us, #login-page, #register-page, #sign-out, #no-result, #contact-us, #contact-success, #edit-post, #error-page {
+    background-color: #212529;
+    color: #fff;
+    border-radius: 25px;
+    width: 800px;
+    max-width: 80%;
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#edit-post {
+    width: 1000px;
+}
+
+@media (min-height: 820px) {
+    #about-us, #login-page, #register-page {
+        margin-top: 205px;
+        margin-bottom: 205px;
+    }
+
+    #no-result {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    #sign-out, #contact-success, #error-page {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        margin-top: 255px;
+        margin-bottom: 255px;
+    }
+}
+
+.btn-signup {
+    color: #fff;
+    background-color: rgb(214, 170, 255);
+}
+
+.btn-signup:hover, .btn-signup:active {
+    color: black;
+}
+
+/* Search Page */
+
+#search-results {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.search-text {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+}
+
+.result-text {
+    margin: 50px auto;
+}
