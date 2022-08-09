@@ -102,6 +102,7 @@ Please note that for testing purposes SQLite database was used. In the settings.
 - Selecting the clickable text will take the user to the 'Blog Posts' page to display the full content of the recipe post.
 ## About:
 
+
 - User can access this section by clicking the 'About' button from the navigation.
 - User is able to scroll further down the page and access the text which provides more detail about the website and it's purpose.
 - For new users, a sign up link is also within the text which will take them to the 'Sign Up' page and allow the user to create an account.
