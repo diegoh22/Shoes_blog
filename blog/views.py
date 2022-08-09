@@ -6,16 +6,10 @@ from django.contrib.auth.decorators import login_required
 from .models import Post
 
 
-
-"""
-Please note code was used from the Code Institute I Think Therefore I Blog
-tutorial to help create this project.
-"""
-
-
 class PostList(generic.ListView):
     """ A view for the post list """
     model = Post
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
 
@@ -112,21 +106,6 @@ def search(request):
         return render(request, 'search.html')
 
 
-def contact(request):
-    """
-    Display contact form and allow users to submit messages.
-    """
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return render(request, 'contact_success.html')
-
-    form = ContactForm()
-    context = {'form': form}
-    return render(request, 'contact.html', context)
-
-
 @login_required
 def add_post(request):
     """ Add a post """
@@ -200,5 +179,3 @@ def delete_post(request, slug, *args, **kwargs):
     post.delete()
     messages.success(request, 'Post deleted!')
     return redirect(reverse('home'))
-
-# Create your views here.

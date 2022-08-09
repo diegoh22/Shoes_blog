@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block content %}
+<!-- Start of Parallax Image -->
+<div class="parallax">
+    <img src="https://res.cloudinary.com/meldissa/image/upload/v1639772168/photo-1547043184-599cd7e6acb9_u9ccd5.jpg" alt="Log Out Parallax Image">
+</div>
+<!-- End of Parallax Image -->
+<!-- Start of Logout Section -->
+<div id="sign-out" class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h2>{% trans "Sign Out" %}</h2>
+            <p>{% trans 'Are you sure you want to sign out?' %}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <form method="post" action="{% url 'account_logout' %}">
+                {% csrf_token %}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button class="btn btn-signup right" type="submit">{% trans 'Sign Out' %}</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End of Logout Section -->
+{% endblock %}
