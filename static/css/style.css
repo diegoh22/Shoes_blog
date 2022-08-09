@@ -16,7 +16,7 @@ body {
 /* Logo and Headings */
 
 #logo {
-    color: rgb(214, 170, 255);
+    color: rgb(224, 5, 5);
     font-family: "Pacifico", sans-serif;
     letter-spacing: 2px;
 }
@@ -48,7 +48,7 @@ h2, h3, h4 {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgb(214, 170, 255);
+    color: rgb(206, 7, 7);
 }
 
 #search-bar > .btn {
@@ -80,7 +80,7 @@ h2, h3, h4 {
 /* Intro Section */
 
 #logo-intro {
-    color: rgb(214, 170, 255);
+    color: rgb(240, 6, 26);
     font-family: "Pacifico", sans-serif;
     letter-spacing: 2px;
     text-transform: none;

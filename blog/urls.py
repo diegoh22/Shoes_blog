@@ -1,6 +1,10 @@
 from . import views
 from django.urls import path
 
+"""
+Please note code was used from the Code Institute I Think Therefore I Blog
+tutorial to help create this project.
+"""
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),

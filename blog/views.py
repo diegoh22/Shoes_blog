@@ -4,6 +4,13 @@ from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Post
+from .forms import PostForm, CommentForm
+
+
+"""
+Please note code was used from the Code Institute I Think Therefore I Blog
+tutorial to help create this project.
+"""
 
 
 class PostList(generic.ListView):
