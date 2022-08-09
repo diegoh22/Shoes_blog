@@ -243,9 +243,11 @@ The score for the lighthouse report for desktop and mobile run across the differ
 ![front](https://user-images.githubusercontent.com/83575427/183722024-a51a44bc-fc17-4f0a-a43d-8a6b89da9561.JPG)
 
 
+
 ## About Page:
 
 ![Cure](https://user-images.githubusercontent.com/83575427/183722295-d8e5bcb9-9669-4136-9b13-e7287070a304.JPG)
+
 
 
 
@@ -254,13 +256,16 @@ The score for the lighthouse report for desktop and mobile run across the differ
 ![Captre](https://user-images.githubusercontent.com/83575427/183722513-b2a1bf4e-cc33-437f-b39b-398207f16a5b.JPG)
 
 
+
 ## Login Page:
 
 ![pture](https://user-images.githubusercontent.com/83575427/183722637-900fc317-6d34-499e-a757-8176153c5d74.JPG)
 
 
+
 ## Logout Page:
 ![log](https://user-images.githubusercontent.com/83575427/183722785-74696c4a-e2eb-4119-a8e1-c35148c3e1d5.JPG)
+
 
 
 ## Search Page:
